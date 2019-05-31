@@ -29,4 +29,3 @@ def coin_toss(tosses):
 
 
 coin_toss(10000)
-#heads = 1, tails = 2
