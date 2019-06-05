@@ -6,12 +6,15 @@ from 1 to 5 (inclusive)."""
 import random
 
 def rand7():
-    return random.randint(1,8)
+    return random.randint(1,7)
 
-print(rand7())
+# print(rand7())
 
 
 def rand5():
-    return random.randint(1,6)
+    my_number = rand7()
+    while my_number == 6 or my_number == 7:
+        my_number = rand7()
+    return my_number
 
 print(rand5())
