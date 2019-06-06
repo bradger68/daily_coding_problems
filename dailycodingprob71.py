@@ -13,7 +13,7 @@ def rand7():
 
 def rand5():
     my_number = rand7()
-    while my_number == 6 or my_number == 7:
+    while my_number > 5:
         my_number = rand7()
     return my_number
 
