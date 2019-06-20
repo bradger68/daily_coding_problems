@@ -31,9 +31,6 @@ def entry_to_list(entry):
 
 def find_letter_strings(my_entry):
 
-    if not my_entry:
-        return
-
     if len(my_entry) == 1:
         return digits_to_letters[my_entry[0]]
 
