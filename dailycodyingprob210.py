@@ -10,7 +10,7 @@ Bonus: What input n <= 1000000 gives the longest sequence?"""
 # Make a function that will find the next n based on current n
 # Check if the sequence goes to 1.
 
-# This finds how many steps for the sequence to go to 1.
+# This finds how many steps for the sequence to go to 1, and returns True when n == 1.
 def findNextN(n):
     count = 1
     while n > 1:
