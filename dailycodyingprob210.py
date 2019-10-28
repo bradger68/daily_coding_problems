@@ -11,7 +11,7 @@ Bonus: What input n <= 1000000 gives the longest sequence?"""
 # Check if the sequence goes to 1.
 
 # This finds how many steps for the sequence to go to 1.
-def findCollatzCount(n):
+def findNextN(n):
     count = 1
     while n > 1:
         if n % 2 == 0:
@@ -20,8 +20,9 @@ def findCollatzCount(n):
         elif n % 2 == 1:
             n = 3*n+1
             count += 1
+    print(count)
     return True
-    return count
 
-# print(findCollatzCount(25))
 
+print(findNextN(3))
+print(findNextN(1000000))
